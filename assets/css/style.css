@@ -1,0 +1,86 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+body{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: rgb(180,180,180);
+}
+
+.container-fluid{
+	padding: 0px;
+	height: 100vh;
+	width: 98%
+}
+
+.image.avatar {
+	border-radius: 100%;
+}
+
+.image.avatar:before {
+	display: none;
+}
+
+.image.avatar img {
+	border-radius: 100%;
+	width: 40%;
+	left: 80%;
+}
+
+.eng{
+	display: none;
+}
+
+.btn .btn-perso{
+	border-radius: 0.35em;
+	text-decoration:none;
+	color: rgb(110,110,110);
+}
+.btn-perso{
+	text-decoration: none;
+	background-color: transparent;
+	background-attachment: scroll, scroll;
+	background-repeat: stretch;
+	background-position-x:0px 0px;
+	background-position-x:0% 0%;
+	background-size: auto 100%;
+	border: rgb(239,239,239) 3px solid;
+	padding: 6px 0px;
+	margin: -2px;
+	margin-bottom: 6px;
+	color: rgb(150,150,150);
+}
+
+a.btn-perso{
+	text-decoration: none;
+	color: rgb(180,180,180);
+	border-bottom: none;
+}
+
+h3{
+	font-size: 20px;
+}
+
+h3 a{
+	text-decoration: none;
+	color: rgb(110,110,110);
+	border-bottom: dotted 1px;
+}
+
+.table a{
+	text-decoration: none;
+	color: rgb(180,180,180);
+}
+
+.table td{
+	border-top: 2px solid;
+	border-color: rgb(239,239,239);
+}
+
+.table tr:first-child td{
+	border:none;
+}
+
+div .row .text_right{
+	padding-left: 15%;
+	/*text-align: right !important;*/
+}

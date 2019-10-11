@@ -4,32 +4,38 @@ Fichier js qui permet de switch entre le fr et l anglais
 
 function switchFr(){
 	console.log("switchFR");
+
+	var css = ".eng { display : none } .fr { display : inherit}";
+	var head = document.head || document.getElementsByTagName('head')[0];
+
 	var style = document.createElement("style");
-	var styleSheet=document.styleSheets[0];
-	styleSheet.addRule(".eng","display:none;");
-	styleSheet.addRule(".fr","display:inherit");
+	head.appendChild(style);
+
+	style.type="text/css";
+	if (style.styleSheet){
+	  // This is required for IE8 and below.
+	  style.styleSheet.cssText = css;
+	} else {
+	  style.appendChild(document.createTextNode(css));
+	}
 }
 
 function switchEng(){
 	console.log("switchEng");
-	var styleSheet=document.styleSheets[0];
-	console.log(styleSheet);
-	styleSheet.addRule(".fr","display:none;");
-	styleSheet.addRule(".eng","display:inherit");
 
-	/*var css = 'h1 { background: red; }',
-    head = document.head || document.getElementsByTagName('head')[0],
-    style = document.createElement('style');
+	var css = ".fr { display : none } .eng { display : inherit}";
+	var head = document.head || document.getElementsByTagName('head')[0];
 
-head.appendChild(style);
+	var style = document.createElement("style");
+	head.appendChild(style);
 
-style.type = 'text/css';
-if (style.styleSheet){
-  // This is required for IE8 and below.
-  style.styleSheet.cssText = css;
-} else {
-  style.appendChild(document.createTextNode(css));
-}*/
+	style.type="text/css";
+	if (style.styleSheet){
+	  // This is required for IE8 and below.
+	  style.styleSheet.cssText = css;
+	} else {
+	  style.appendChild(document.createTextNode(css));
+	}
 }
 
 function listernetLang(){

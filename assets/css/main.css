@@ -3210,3 +3210,26 @@ a.button{
 	border-color: #c4c4c4;
 	border-width: 2px;
 }
+
+.hideButtons{
+	display: none;
+}
+
+
+@media screen and (max-width: 980px){
+	.hideButtons{
+		display: inherit;
+	}
+
+	/*#gitLin{
+		width: 50%;
+	}
+
+	#gitLin:first-child{
+		width: 49.5%;
+	}*/
+
+	#gitLin{
+		width: 49.5%;
+	}
+}
